@@ -3,59 +3,76 @@
     <head>
         <meta charset="utf-8">
         <title>Norway Fact Sheet</title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
     <header>
         <h1>Norway</h1> 
-        <nav>
-            <ul>
+        <nav> 
+            <ul id="nav"> <!--nav id-->
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#geography">Geography</a></li>
                 <li><a href="#people">People and Society</a></li>
                 <li><a href="#government">Government</a></li>
                 <li><a href="#addinfo">Additional Information</a></li>
             </ul>
+            <figure id="figure">
+                <img src="images/norway-flag.png" alt="Flag of Norway.">
+                <figcaption>(Flag of Norway. Photo via  <a href="https://www.cia.gov/the-world-factbook/countries/norway/images">The World Factbook</a>)</figcaption>
+            </figure>
         </nav>
     </header>
-    <article id="introduction">
+
+    <!--intro section start-->
+<main>
+    <section id="introduction">
        <h2>Introduction</h2>
-       <figure>
-        <img src="images/norway-flag.png" alt="Flag of Norway." />
-        <figcaption>(Flag of Norway. Photo via  <a href="https://www.cia.gov/the-world-factbook/countries/norway/images">The World Factbook</a>)</figcaption>
-      </figure>
        <p>Two centuries of Viking raids into Europe tapered off following the adoption of Christianity by King Olav TRYGGVASON in 994; conversion of the Norwegian kingdom occurred over the next several decades. In 1397, Norway was absorbed into a union with Denmark that lasted more than four centuries. </p>
        <p>In 1814, Norwegians resisted the cession of their country to Sweden and adopted a new constitution. Sweden then invaded Norway but agreed to let Norway keep its constitution in return for accepting the union under a Swedish king. Rising nationalism throughout the 19th century led to a 1905 referendum granting Norway independence. </p>
        <p>Although Norway remained neutral in World War I, it suffered heavy losses to its shipping. Norway proclaimed its neutrality at the outset of World War II but was nonetheless occupied for five years by Nazi Germany (1940-45). In 1949, Norway abandoned neutrality and became a member of <abbr title="The North Atlantic Treaty Organization">NATO</abbr>. </p>
        <p>Discovery of oil and gas in adjacent waters in the late 1960s boosted Norway's economic fortunes. In referenda held in 1972 and 1994, Norway rejected joining the <abbr title="The European Union">EU.</abbr> Key domestic issues include immigration and integration of ethnic minorities, maintaining the country's extensive social safety net with an aging population, and preserving economic competitiveness.</p>
-    </article>
+    </section>
+    <!--intro section end-->
 
-    <article id="geography">
-       <h2>Geography</h2>
-
-        <figure>
-          <img src="images/norway-mountain.jpg" alt="Majestic Naeroy Fjord." />
+    <!--geography section start-->
+    <section id="geography">
+       <h2 id="header">Geography</h2>
+<!--i took out div here-->
+        <figure id="mountain">
+        <img src="images/norway-mountain.jpg" alt="Majestic Naeroy Fjord.">
           <figcaption>(Majestic Naeroy Fjord. Photo via  <a href="https://www.cia.gov/the-world-factbook/countries/norway/images">The World Factbook</a>)</figcaption>
         </figure>
-
-       <h3>Location</h3>
-       <p>Northern Europe, bordering the North Sea and the North Atlantic Ocean, west of Sweden.</p>
-
+        
+    <article id="area">
        <h3>Area</h3>
        <table>
-        <caption>Area Distribution in Norway (sq km)</caption>
+        <caption>Area Distribution in Norway</caption>
         <tr>
-            <th>Land</th>
-            <th>Water</th>
-            <th>Total</th>
+            <th>Feature</th>
+            <th>SQ KM</th>
         </tr>
         <tr>
-            <th>304,282</th>
-            <th>19,520</th>
-            <th>323,802</th>
+            <td>Land</td>
+            <td>304,282</td>
+        </tr>
+        <tr>
+            <td>Water</td>
+            <td>19,520</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>323,802</td>
         </tr>
         </table>
+    </article>
 
+    <article id="location">
+        <h3>Location</h3>
+        <p>Northern Europe, bordering the North Sea and the North Atlantic Ocean, west of Sweden.</p>
+     </article>
+
+    <article id="terrain">
         <h3>Terrain</h3>
         <ul>
             <li>Glaciated</li>
@@ -63,13 +80,17 @@
             <li>Small, scattered plains</li>
             <li>Coastline deeply indented by fjords</li>
             <li>Arctic tundra in north</li>
-
         </ul>
     </article>
+</section>
+    <!--geography section end-->
 
-    <article id="people">
+    <!--people and society section start-->
+    <section id="people">
         <h2>People and Society</h2>
 
+    <div>
+    <article>
         <h3>Religions</h3>
         <table>
             <caption>Religions of Norway, 2021</caption>
@@ -102,7 +123,9 @@
                 <td>19.9%</td>
             </tr>
         </table>
+    </article>
 
+    <article>
         <h3>Languages</h3>
 
         <ul>
@@ -124,14 +147,33 @@
             <li>Nordland</li>
             <li>Troms</li>
         </ul>
+    </article>
+    </div>
 
+    <article>
         <h3>Population Distribution</h3>
         <p>Most Norwegians live in the south where the climate is milder and there is better connectivity to mainland Europe. Population clusters are found all along the North Sea coast in the southwest, and Skaggerak in the southeast. The interior areas of the north remain sparsely populated.</p>
     </article>
+    </section>
+    <!--people and society section end-->
 
-    <article id="government">
+    <!--government section start-->
+    <section id="government">
         <h2>Government</h2>
 
+        <article>
+            <h3>National Anthem</h3>
+            <p>Name: "Ja, vi elsker dette landet" (Yes, We Love This Country)</p>
+            <p>Lyrics/music: lyrics/music: Bjornstjerne BJORNSON/Rikard NORDRAAK</p>
+    
+            <audio src="audio/norway-national-anthem.mp3" controls></audio>
+    
+          <p>Norway National Anthem via <a href="https://www.cia.gov/the-world-factbook/countries/norway/images">The World Factbook</a>.</p>
+          <p><small>Note: adopted 1864; in addition to the national anthem, "Kongesangen" (Song of the King), which uses the tune of "God Save the King," serves as the royal anthem</small></p>
+        </article>
+
+    <div>
+    <article>
         <h3>Administrative Divisions</h3>
         <ol>
             <li>Agder</li>
@@ -146,42 +188,36 @@
             <li>Vestland</li>
             <li>Viken</li>
         </ol>
+    </article>
 
-        <h3>National Anthem</h3>
-        <p>Name: "Ja, vi elsker dette landet" (Yes, We Love This Country)</p>
-        <p>Lyrics/music: lyrics/music: Bjornstjerne BJORNSON/Rikard NORDRAAK</p>
-
-        <audio src="norway-national-anthem.mp3" controls></audio>
-
-      <p>Norway National Anthem via <a href="https://www.cia.gov/the-world-factbook/countries/norway/images">The World Factbook</a>.</p>
-      <p><small>Note: adopted 1864; in addition to the national anthem, "Kongesangen" (Song of the King), which uses the tune of "God Save the King," serves as the royal anthem</small></p>
+    <article>
         <h3>Diplomatic Representation from the U.S.</h3>
         <h4>Chief of mission:</h4>
             <p>Ambassador Marc NATHANSON (since <time datetime="2022-06-16"> 16 June 2022</time>) </p> 
 
         <h4>Embassy:</h4>
-        <address><p>Morgedalsvegen 36<br/>0378 Oslo, Norway</p></address>
+        <address><p>Morgedalsvegen 36<br>0378 Oslo, Norway</p></address>
 
         <h4>Mailing Address:</h4>
-        <address><p>5460 Oslo Place<br/>Washington D.C. 20521-5460</p></address>
+        <address><p>5460 Oslo Place<br>Washington D.C. 20521-5460</p></address>
 
         <h4>Telephone:</h4>
-        <address>
-            <a href="tel:+4721308540">[47] 21-30-85-40</a>
-        </address>
+        <p>Phone: <a href="tel:+4721308540">[47] 21-30-85-40</a></p>
         
-
         <h4>Fax:</h4>
-        <address>
-            <a href="tel:+4722562751">[47] 22-56-27-51</a>
-        </address>
+        <p>Fax: <a href="tel:+4722562751">[47] 22-56-27-51</a></p>
 
         <h4>Email Address and Website:</h4>
-        <address>
-            <p><a href="https://no.usembassy.gov/">Website</a><br/>
-                <a href="mailto:OsloACS@state.gov">Email</a></p>
-        </address>
+        <p>
+            Email: <a href="mailto:OsloACS@state.gov">OsloACS@state.gov</a>
+            Website:<a href="https://no.usembassy.gov/">https://no.usembassy.gov</a>
+        </p>
     </article>
+</div>
+    </section>
+    <!--government section end-->
+</main>
+
 <footer>
     <article id="addinfo">
         <h3>Additional Information</h3>
