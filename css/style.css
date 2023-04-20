@@ -28,8 +28,6 @@ nav{
     margin-left:8px;
     margin-right:8px;
     padding-top:15px;
-    border:2px solid;
-    border-color:#6C91C2;
 }
 
 #figure{
@@ -76,16 +74,29 @@ table{
     padding-right:10px;
     padding-top:10px;
     padding-bottom:10px;
-    border:2px solid;
+    border-top:2px solid #222;
+    border-left:2px solid #222;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    border-bottom:2px solid #222;
+    border-right:2px solid #222;
+    padding:8px;
 }
 
 td{
     padding-right:10px;
-    text-align:center;
+    text-align:left;
 }
 
 th{
     padding-bottom:5px;
+}
+
+td:last-child{
+    text-align:right;
 }
 
 audio{
@@ -100,7 +111,7 @@ div{
 }
 
 h1{
-    font-family: "Yeseva One", "Segoe Script", cursive;
+    font-family: "Yeseva One", "Segoe Script", serif;
     margin-top:20px;
     margin-bottom:20px;
     margin-left:10px;
