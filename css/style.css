@@ -80,7 +80,7 @@ nav{
     right:50px;
 }
 
-section{
+.grid{
     display:grid;
     grid-template-columns: 2fr 2fr;
     grid-gap: 20px; 
