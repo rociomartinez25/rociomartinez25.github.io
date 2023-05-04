@@ -17,20 +17,21 @@ h2,
 h3{
     font-family: "Abhaya Libre", "Georgia", "Times New Roman", serif;
     text-align:center;
+    font-weight:100;
 }
 
 h1{
     font-size:55px;
     letter-spacing:3px;
-    font-weight: 100;
 }
 
 h2{
     font-size:35px;
+    letter-spacing:2px;
 }
 
-p{
-    max-width:960px;
+h3{
+    font-size:25px;
 }
 
 a{
@@ -43,8 +44,10 @@ a:link{
 }
 
 a:visited{
-    color:#F13C3C;
+    /*color:#F13C3C;*/
+    color:#E77F7F;
 }
+
 a:hover{
     color:#FFC0C0;
 }
@@ -56,10 +59,6 @@ a:active{
 /*grid*/
 
 nav{
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:9999;
     display:flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -67,11 +66,20 @@ nav{
     max-width:960px;
     margin:auto;
     background-color:#F5F6F2;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
 }
 
-section{
+#tiny{
+    position:relative;
+    right:50px;
+}
+
+div{
     display:grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-gap: 20px; 
 }
 
