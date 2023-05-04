@@ -80,7 +80,7 @@ nav{
     right:50px;
 }
 
-div{
+section{
     display:grid;
     grid-template-columns: 2fr 2fr;
     grid-gap: 20px; 
@@ -88,16 +88,16 @@ div{
     padding-bottom:10px;
 }
 
-#bouncehouse{
+div{
+    margin:auto;
+}
+
+.bouncehouse{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px; 
     position:relative;
     justify-content: center;
-}
-
-section{
-    margin:auto;
 }
 
 .header{
@@ -109,10 +109,11 @@ section{
 }
 
 #booking{
+    display:flex;
+    flex-flow:column;
     padding:50px;
     background-color:#F0D9D9;
     border-radius:50px;
-    margin:auto;
     text-align:center;
 }
 
